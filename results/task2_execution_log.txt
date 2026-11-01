@@ -1,0 +1,16 @@
+Task 2 | N=2048 | threads=8 | repetitions=5 | available processors=12
+
+WORKLOAD: full
+static      mean=3.430517 s | runs=3.409788,3.411286,3.337227,3.593481,3.400804 | max error=0
+dynamic_1   mean=3.341226 s | runs=3.421372,3.307125,3.365595,3.309696,3.302340 | max error=0
+dynamic_16  mean=3.417193 s | runs=3.301761,3.507238,3.717512,3.301889,3.257565 | max error=0
+guided      mean=3.270824 s | runs=3.250006,3.268583,3.306813,3.256379,3.272340 | max error=0
+
+WORKLOAD: triangular
+static      mean=2.650530 s | runs=2.678787,2.734390,2.646897,2.558852,2.633725 | max error=0
+dynamic_1   mean=1.607526 s | runs=1.604144,1.612752,1.614453,1.605208,1.601072 | max error=0
+dynamic_16  mean=1.714007 s | runs=1.667926,1.747615,1.755982,1.713859,1.684653 | max error=0
+guided      mean=1.634143 s | runs=1.633417,1.628343,1.636798,1.631975,1.640183 | max error=0
+
+Overall correctness: PASS
+Saved task2_results.csv

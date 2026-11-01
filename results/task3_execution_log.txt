@@ -1,0 +1,36 @@
+Task 3: race condition and fixes | iterations=10000000 | threads=8 | repetitions=5
+Available processors: 12
+
+race
+Run 1: counter=2612665, time=0.006315 s (race; result not guaranteed)
+Run 2: counter=1254520, time=0.004752 s (race; result not guaranteed)
+Run 3: counter=1255926, time=0.004222 s (race; result not guaranteed)
+Run 4: counter=1277138, time=0.004059 s (race; result not guaranteed)
+Run 5: counter=1263362, time=0.003910 s (race; result not guaranteed)
+Mean race time: 0.004652 s
+
+critical
+Run 1: counter=10000000, time=0.144796 s PASS
+Run 2: counter=10000000, time=0.142146 s PASS
+Run 3: counter=10000000, time=0.141521 s PASS
+Run 4: counter=10000000, time=0.144005 s PASS
+Run 5: counter=10000000, time=0.143602 s PASS
+Mean critical time: 0.143214 s | PASS
+
+atomic
+Run 1: counter=10000000, time=0.173046 s PASS
+Run 2: counter=10000000, time=0.165511 s PASS
+Run 3: counter=10000000, time=0.167713 s PASS
+Run 4: counter=10000000, time=0.160637 s PASS
+Run 5: counter=10000000, time=0.176028 s PASS
+Mean atomic time: 0.168587 s | PASS
+
+reduction
+Run 1: counter=10000000, time=0.000061 s PASS
+Run 2: counter=10000000, time=0.000056 s PASS
+Run 3: counter=10000000, time=0.000036 s PASS
+Run 4: counter=10000000, time=0.000054 s PASS
+Run 5: counter=10000000, time=0.000050 s PASS
+Mean reduction time: 0.000051 s | PASS
+
+Saved: task3_results.csv

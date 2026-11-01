@@ -1,0 +1,3 @@
+threads,unpadded_mean_s,padded_mean_s,padding_speedup,unpadded_correct,padded_correct
+4,0.013249200,0.011449200,1.157216227,1,1
+8,0.015378400,0.010951800,1.404189261,1,1

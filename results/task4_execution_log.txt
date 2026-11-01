@@ -1,0 +1,21 @@
+Task 4: False Sharing | increments per thread=10000000 | repeats=5
+Available OpenMP processors: 12 | padded slot: 64 bytes
+
+THREADS: 4
+Run 1: unpadded=0.014160 s | padded=0.011840 s | correctness=PASS
+Run 2: unpadded=0.013545 s | padded=0.012638 s | correctness=PASS
+Run 3: unpadded=0.013078 s | padded=0.010630 s | correctness=PASS
+Run 4: unpadded=0.012883 s | padded=0.010531 s | correctness=PASS
+Run 5: unpadded=0.012580 s | padded=0.011607 s | correctness=PASS
+MEAN: unpadded=0.013249 s | padded=0.011449 s | padding speedup=1.1572x | PASS
+
+THREADS: 8
+Run 1: unpadded=0.016195 s | padded=0.010620 s | correctness=PASS
+Run 2: unpadded=0.014984 s | padded=0.010799 s | correctness=PASS
+Run 3: unpadded=0.014555 s | padded=0.011375 s | correctness=PASS
+Run 4: unpadded=0.015804 s | padded=0.010310 s | correctness=PASS
+Run 5: unpadded=0.015354 s | padded=0.011655 s | correctness=PASS
+MEAN: unpadded=0.015378 s | padded=0.010952 s | padding speedup=1.4042x | PASS
+
+Overall correctness: PASS
+Saved: task4_results.csv

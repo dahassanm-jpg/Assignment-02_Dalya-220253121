@@ -1,0 +1,60 @@
+Assignment 2 Task 1 - controlled rerun
+N=2048, repeats=5, available processors=12, default max threads=12
+
+SERIAL BASELINE
+Serial run 1: 20.654431 s
+Serial run 2: 21.829861 s
+Serial run 3: 21.720083 s
+Serial run 4: 20.265682 s
+Serial run 5: 21.516151 s
+Serial mean: 21.197242 s
+
+Requested threads: 1 | Actual threads: 1
+Run 1: 21.414578 s | Max error: 0
+Run 2: 21.340761 s | Max error: 0
+Run 3: 22.041662 s | Max error: 0
+Run 4: 20.967923 s | Max error: 0
+Run 5: 21.523047 s | Max error: 0
+Mean: 21.457594 s | Speedup: 0.987867 | Efficiency: 98.79% | PASS
+
+Requested threads: 2 | Actual threads: 2
+Run 1: 10.263800 s | Max error: 0
+Run 2: 10.238366 s | Max error: 0
+Run 3: 10.568710 s | Max error: 0
+Run 4: 11.088352 s | Max error: 0
+Run 5: 10.499812 s | Max error: 0
+Mean: 10.531808 s | Speedup: 2.012688 | Efficiency: 100.63% | PASS
+
+Requested threads: 4 | Actual threads: 4
+Run 1: 7.137755 s | Max error: 0
+Run 2: 6.263406 s | Max error: 0
+Run 3: 7.347196 s | Max error: 0
+Run 4: 6.749157 s | Max error: 0
+Run 5: 7.055650 s | Max error: 0
+Mean: 6.910633 s | Speedup: 3.067337 | Efficiency: 76.68% | PASS
+
+Requested threads: 8 | Actual threads: 8
+Run 1: 3.317143 s | Max error: 0
+Run 2: 3.272403 s | Max error: 0
+Run 3: 3.242958 s | Max error: 0
+Run 4: 3.329692 s | Max error: 0
+Run 5: 3.305310 s | Max error: 0
+Mean: 3.293501 s | Speedup: 6.436081 | Efficiency: 80.45% | PASS
+
+Requested threads: 16 | Actual threads: 16
+Run 1: 3.296847 s | Max error: 0
+Run 2: 3.297829 s | Max error: 0
+Run 3: 3.371815 s | Max error: 0
+Run 4: 3.346487 s | Max error: 0
+Run 5: 3.306007 s | Max error: 0
+Mean: 3.323797 s | Speedup: 6.377418 | Efficiency: 39.86% | PASS
+
+SUMMARY
+Requested  Actual   Mean (s)    Speedup   Efficiency (%)   Max error
+1          1        21.457594   0.9879    98.79            0
+2          2        10.531808   2.0127    100.63           0
+4          4        6.910633    3.0673    76.68            0
+8          8        3.293501    6.4361    80.45            0
+16         16       3.323797    6.3774    39.86            0
+Serial baseline: 21.197242 s | Overall correctness: PASS
+Saved: task1_results_rerun.csv
